@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/login_image_foreground" />
+        app:srcCompat="@mipmap/otp_image_foreground" />
 
     <TextView
         android:id="@+id/otp_title"
@@ -73,6 +73,7 @@
         android:background="@drawable/primary_btn_bg"
         android:fontFamily="@font/open_sans_semibold"
         android:text="Verify OTP"
+        android:onClick="verifyOtpFunction"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="16sp"

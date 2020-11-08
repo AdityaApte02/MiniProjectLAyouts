@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "6941249487",
+    "firebase_url": "https://miniprojectdemo-cbba5.firebaseio.com",
+    "project_id": "miniprojectdemo-cbba5",
+    "storage_bucket": "miniprojectdemo-cbba5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6941249487:android:064a18c8bbbcd9e9920cba",
+        "android_client_info": {
+          "package_name": "com.example.miniprojectloginlayouts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6941249487-cm3nudmou27pkko06sfrtlecav50m9j8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEOu0gk4HTFMNPwdra9luF5I1UrXclgaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6941249487-cm3nudmou27pkko06sfrtlecav50m9j8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "63215209400",
+    "firebase_url": "https://miniprojectloginlayouts.firebaseio.com",
+    "project_id": "miniprojectloginlayouts",
+    "storage_bucket": "miniprojectloginlayouts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63215209400:android:f98d902620c7f54b401d4d",
+        "android_client_info": {
+          "package_name": "com.example.miniprojectloginlayouts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63215209400-ctt8dp1tftqls1jaii8snh8vc3jcf2pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miniprojectloginlayouts",
+            "certificate_hash": "162a3f8d144713ec7f3067699e6f8af9d8d1894a"
+          }
+        },
+        {
+          "client_id": "63215209400-7dsk2f4vecj062k6d25sf8ebn2sgjgig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACEKNk0n6zbBdxshZNkDJV9A6gMBZrG_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63215209400-7dsk2f4vecj062k6d25sf8ebn2sgjgig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
