@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "753771848564",
+    "firebase_url": "https://mini-project-phone-auth.firebaseio.com",
+    "project_id": "mini-project-phone-auth",
+    "storage_bucket": "mini-project-phone-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753771848564:android:c3c319d97d2ca863244221",
+        "android_client_info": {
+          "package_name": "com.example.mini_project_phone_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753771848564-45lkhlnrfnrbvfgb7cbv05unsc31h8uq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAploJLRvkndSVK7MqaKjgZfG-8z7FSjOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753771848564-45lkhlnrfnrbvfgb7cbv05unsc31h8uq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
