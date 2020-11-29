@@ -80,6 +80,7 @@ public class MainPage extends AppCompatActivity {
                             public void onClick(View v) {
 
                                 Intent intent=new Intent(MainPage.this, Sell.class);
+                                intent.putExtra("phone_number", phone_number);
                                 startActivity(intent);
                             }
                         }

@@ -7,15 +7,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.Interpreter;
@@ -26,8 +25,6 @@ import org.tensorflow.lite.support.common.ops.NormalizeOp;
 import org.tensorflow.lite.support.image.ImageProcessor;
 import org.tensorflow.lite.support.image.TensorImage;
 import org.tensorflow.lite.support.image.ops.ResizeOp;
-import org.tensorflow.lite.support.image.ops.ResizeWithCropOrPadOp;
-import org.tensorflow.lite.support.image.ops.Rot90Op;
 import org.tensorflow.lite.support.label.TensorLabel;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
@@ -58,14 +55,24 @@ public class Sell extends AppCompatActivity {
     Uri imageuri;
     Button buclassify;
     TextView classitext;
+    Button save;
+    Intent intent1;
+
+    private String TAG="Error!";
+    private String phone_number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sell);
         imageView=(ImageView)findViewById(R.id.image);
         buclassify=(Button)findViewById(R.id.classify);
+        save=(Button)findViewById(R.id.save);
         classitext=(TextView)findViewById(R.id.classifytext);
+
+        phone_number=getIntent().getStringExtra("phone_number");
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,8 +113,13 @@ public class Sell extends AppCompatActivity {
 
                 tflite.run(inputImageBuffer.getBuffer(),outputProbabilityBuffer.getBuffer().rewind());
                 showresult();
+
+
+
             }
         });
+
+
 
 
 
@@ -157,12 +169,26 @@ public class Sell extends AppCompatActivity {
                         .getMapWithFloatValue();
         float maxValueInMap =(Collections.max(labeledProbability.values()));
 
+        String fruitName="";
         for (Map.Entry<String, Float> entry : labeledProbability.entrySet()) {
             if (entry.getValue()==maxValueInMap) {
-                String fruitName = entry.getKey();
-                classitext.setText(entry.getKey());
+                 fruitName = entry.getKey();
+                 break;
+
+            }else{
+                continue;
             }
         }
+
+        Intent intent1=new Intent(Sell.this, ActualPage.class);
+        intent1.putExtra("phone_number", phone_number);
+        Log.i(TAG, phone_number);
+        intent1.putExtra("itemName", fruitName);
+        startActivity(intent1);
+
+
+
+
     }
 
     @Override
